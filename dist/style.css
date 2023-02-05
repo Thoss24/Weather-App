@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: lightblue;
+}
+
+#header {
+    background: white;
+    height: 10vh;
+}
+
+#main-body {
+    height: 80vh;
+}
+
+#footer {
+    background: white;
+    height: 10vh;
+}

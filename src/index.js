@@ -1,3 +1,6 @@
-// import _ from 'lodash';
+import display from "./display";
+import weather from "./weather";
 
-console.log("hello")
+weather.getWeather()
+
+

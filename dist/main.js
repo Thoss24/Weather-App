@@ -1,1 +1,1 @@
-console.log("hello");
+(()=>{"use strict";!async function(){try{let t=await fetch("http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=4d3ec4866c4270e5095e1511ffb1bd78",{mode:"cors"}),a=await t.json();console.log(a.city)}catch(t){alert(t)}}()})();
