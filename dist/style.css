@@ -24,6 +24,7 @@
     height: 10vh;
 }
 
+/* Search location area */
 #search-city-container {
     display: flex;
     flex-direction: row;
