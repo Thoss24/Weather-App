@@ -16,6 +16,7 @@
 }
 
 #main-body {
+  
     height: 80vh;
 }
 
@@ -44,3 +45,40 @@
     padding: 10px;
     cursor: pointer;
 }
+
+/* city name area */
+#city-name-area-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#city-name-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* weather images area  */
+.weather-images {
+    height: 45px;
+    width: 45px;
+}
+
+/* weather info area */
+#weather-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather-info {
+    padding: 20px;
+    
+}
+

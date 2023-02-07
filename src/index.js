@@ -10,7 +10,10 @@ searchCityButton.addEventListener('click', async () => {
         return
     }
     const weatherInfo = await weather.getWeather(city.value)
+    display.displayWeather(weatherInfo)
 });
+
+
 
 
 

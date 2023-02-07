@@ -3,7 +3,7 @@ const weather = (() => {
 
     function weatherData(data) {
 
-        let weatherData = {
+        let weatherInfo = {
             feelsLike: data.main.feels_like,
             humidity: data.main.humidity,
             temp: data.main.temp,
@@ -11,8 +11,7 @@ const weather = (() => {
             temp_min: data.main.temp_min
         };
 
-        console.log(weatherData.temp_min, weatherData.temp_max)
-        
+        return weatherInfo
     }
 
     async function getWeather(cityName) {
@@ -26,7 +25,9 @@ const weather = (() => {
     };
 
     return {
-        getWeather
+        getWeather,
+        weatherData,
+        
     }
 
 })();
