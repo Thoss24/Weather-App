@@ -11,15 +11,21 @@
 <body>
 
     <div id="container">
-        <header id="header">header</header>
+        <header id="header"><i class="fa fa-sun-o" id="sun-icon"></i>Weather App</header>
+       
         <div id="main-body">
             <div id="search-city-container">
                 <input type="text" id="search-city" placeholder="Search city">
                 <button type="button" id="search-city-button"><i class="fa fa-search"></i></button>
+                <label class="toggle">
+                    <input type="checkbox" id="checkbox">
+                    <span class="labels" data-on="&#8451;" data-off="&#8457;"></span>
+                </label>
             </div>
             <div id="city-name-area-container">
                 <div id="city-name-area"></div>
             </div>
+            
             <div id="weather-info-container">
                 <div class="weather-info" id="temp"></div>
                 <div class="weather-info" id="humidity"></div>
@@ -28,7 +34,6 @@
                 <div class="weather-info" id="feels-like"></div>
             </div>
         </div>
-        <footer id="footer">footer</footer>
     </div>
     
     <script src="main.js"></script>
