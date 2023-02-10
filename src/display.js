@@ -44,7 +44,7 @@ const display = (() => {
         // conditions for icons and display in celsius
         if (check.checked && data.temp >= 18) {
             let sunny = document.createElement('img');
-            sunny.src = "../images/sunny.png";
+            sunny.src = "";
             sunny.classList.add('weather-images');
             bodyArea.classList = 'sunny-weather';
             cityName.appendChild(sunny)
@@ -52,7 +52,7 @@ const display = (() => {
         };
         if (check.checked && data.temp >= 7 && data.temp < 18) {
             let warm = document.createElement('img');
-            warm.src = "../images/warm.png";
+            warm.src = ".."
             warm.classList.add('weather-images');
             bodyArea.classList = 'warm-weather';
             cityName.appendChild(warm)
@@ -60,7 +60,7 @@ const display = (() => {
         };
         if (check.checked && data.temp < 7 && data.temp > 0) {
             let cold = document.createElement('img');
-            cold.src = "../images/cold.png";
+            cold.src = "images/cold.png";
             cold.classList.add('weather-images');
             bodyArea.classList = 'cold-weather';
             cityName.appendChild(cold)
@@ -68,7 +68,7 @@ const display = (() => {
         };
         if (check.checked && data.temp < 0) {
             let freezing = document.createElement('img');
-            freezing.src = "../images/freezing.png";
+            freezing.src = "images/freezing.png";
             freezing.classList.add('weather-images');
             bodyArea.classList = 'freezing-weather';
             cityName.appendChild(freezing)
@@ -80,7 +80,7 @@ const display = (() => {
         // conditions for icons and display in fahrenheit
         if (!check.checked && data.temp >= 65) {
             let sunny = document.createElement('img');
-            sunny.src = "../images/sunny.png";
+            sunny.src = "images/sunny.png";
             sunny.classList.add('weather-images');
             bodyArea.classList = 'sunny-weather';
             cityName.appendChild(sunny)
@@ -88,7 +88,7 @@ const display = (() => {
         };
         if (!check.checked && data.temp >= 45 && data.temp < 65) {
             let warm = document.createElement('img');
-            warm.src = "../images/warm.png";
+            warm.src = "images/warm.png";
             warm.classList.add('weather-images');
             bodyArea.classList = 'warm-weather';
             cityName.appendChild(warm)
@@ -96,7 +96,7 @@ const display = (() => {
         };
         if (!check.checked && data.temp < 45 && data.temp > 0) {
             let cold = document.createElement('img');
-            cold.src = "../images/cold.png";
+            cold.src = "images/cold.png";
             cold.classList.add('weather-images');
             bodyArea.classList = 'cold-weather';
             cityName.appendChild(cold)
@@ -104,7 +104,7 @@ const display = (() => {
         };
         if (!check.checked && data.temp < 32) {
             let freezing = document.createElement('img');
-            freezing.src = "../images/freezing.png";
+            freezing.src = "images/freezing.png";
             freezing.classList.add('weather-images');
             bodyArea.classList = 'freezing-weather';
             cityName.appendChild(freezing)
