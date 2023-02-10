@@ -20,16 +20,16 @@ const weather = (() => {
             if (check.checked) {
             let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=4d3ec4866c4270e5095e1511ffb1bd78&units=metric`, {mode:'cors'});
             let weather = weatherData(await response.json())
-            console.log(cityName)
             return weather
             } 
             else if (!check.checked) {
-            let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=4d3ec4866c4270e5095e1511ffb1bd78&units=imperial`, {mode:'cors'});
+            let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=4d3ec4866c4270e5095e1511ffb1bd78&units=imperial`, {mode:'cors'}); 
             let weather = weatherData(await response.json())
             return weather
             }
         } catch(err) {
-            alert(err)
+            console.log(err)
+            alert(`${cityName} does not exist`)
         }
     };
 

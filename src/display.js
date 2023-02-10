@@ -9,7 +9,7 @@ const display = (() => {
     const minTemp = document.getElementById('min-temp');
     const maxTemp = document.getElementById('max-temp');
     const feelsLike = document.getElementById('feels-like');
-    const bodyArea = document.getElementById('container'); //
+    const bodyArea = document.getElementById('container'); 
     const weatherInfo = document.querySelectorAll('.weather-info');
     const check = document.getElementById('checkbox');
 
