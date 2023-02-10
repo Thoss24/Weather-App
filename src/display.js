@@ -44,7 +44,7 @@ const display = (() => {
         // conditions for icons and display in celsius
         if (check.checked && data.temp >= 18) {
             let sunny = document.createElement('img');
-            sunny.src = "";
+            sunny.src = "images/sunny.png"
             sunny.classList.add('weather-images');
             bodyArea.classList = 'sunny-weather';
             cityName.appendChild(sunny)
@@ -52,7 +52,7 @@ const display = (() => {
         };
         if (check.checked && data.temp >= 7 && data.temp < 18) {
             let warm = document.createElement('img');
-            warm.src = ".."
+            warm.src = "images/warm.png"
             warm.classList.add('weather-images');
             bodyArea.classList = 'warm-weather';
             cityName.appendChild(warm)
